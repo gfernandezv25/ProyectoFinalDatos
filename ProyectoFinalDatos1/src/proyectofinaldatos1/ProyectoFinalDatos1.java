@@ -4,15 +4,9 @@
  */
 package proyectofinaldatos1;
 
-/**
- *
- * @author gabrielfernandezvargas
- */
 public class ProyectoFinalDatos1 {
 
-    /**
-     * @param args the command line arguments
-     */
+  
     public static void main(String[] args) {
         // TODO code application logic here
     }
