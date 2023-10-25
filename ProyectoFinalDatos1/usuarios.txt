@@ -1,0 +1,6 @@
+Nombre: w
+Apellidos: w
+Identificación: w
+Correo Electrónico: w
+Número de Teléfono: w
+Contraseña: w
