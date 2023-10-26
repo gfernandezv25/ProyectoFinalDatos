@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Login {
     public void crearUsuario() {
         try {
-            FileWriter fileWriter = new FileWriter("usuarios.txt", true);
+            FileWriter txt = new FileWriter("usuarios.txt", true);
 
             String nombre = JOptionPane.showInputDialog("Nombre:");
             String apellidos = JOptionPane.showInputDialog("Apellidos:");
@@ -18,22 +18,22 @@ public class Login {
 
             Usuario nuevoUsuario = new Usuario(nombre, apellidos, identificacion, correoElectronico, numeroTelefono, contrasena);
 
-            // Construir una cadena con los datos del usuario
+    
             String usuarioDato = "Nombre: " + nuevoUsuario.getNombre() + "\n" +
                     "Apellidos: " + nuevoUsuario.getApellidos() + "\n" +
                     "Identificacion: " + nuevoUsuario.getIdentificacion() + "\n" +
                     "Correo Electronico: " + nuevoUsuario.getCorreoElectronico() + "\n" +
                     "Numero de Telefono: " + nuevoUsuario.getNumeroTelefono() + "\n" +
-                    "Contraseña: " + nuevoUsuario.getContrasena() + "\n";
+                    "Contraseña: " + nuevoUsuario.getContrasena() + "\n\n";
 
-            // Escribir los datos en el archivo
-            fileWriter.write(usuarioDato);
+          txt.write(usuarioDato);
+            txt.write("\n");
 
-            // Cerrar el FileWriter
-            fileWriter.close();
+          
+            txt.close();
 
-            JOptionPane.showMessageDialog(null, "Usuario creado exitosamente y almacenado en usuarios.txt.");
-        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Gracias! "+nombre+ " tu usuario fue creado exitosamente.");
+        } catch (IOException i) {
             JOptionPane.showMessageDialog(null, "Error al crear el usuario.");
         }
     }

@@ -1,6 +1,16 @@
-Nombre: w
-Apellidos: w
-Identificación: w
-Correo Electrónico: w
-Número de Teléfono: w
-Contraseña: w
+Nombre: 1
+Apellidos: 2
+Identificacion: 3
+Correo Electronico: 4
+Numero de Telefono: 5
+Contraseña: 6
+
+
+Nombre: 1
+Apellidos: 2
+Identificacion: 3
+Correo Electronico: 4
+Numero de Telefono: 5
+Contraseña: 6
+
+
