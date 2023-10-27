@@ -29,7 +29,6 @@ public class Login {
           txt.write(usuarioDato);
             txt.write("\n");
 
-          
             txt.close();
 
             JOptionPane.showMessageDialog(null, "Gracias! "+nombre+ " tu usuario fue creado exitosamente.");
